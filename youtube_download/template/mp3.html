@@ -1,0 +1,11 @@
+{%extends 'base_tube.html'%}
+{%block title%}Music Downloader{%endblock%}
+{%block theme%}Music Download{%endblock%}
+{%block tips%}<h5>the media file will be destroyed three minute later</h5>{%endblock%}
+{%block video%}
+        <audio controls>
+        <source src={{fileloc}} type={{fmine}}>
+        </audio>
+<hr>
+        <a href={{fileloc}} download={{fileloc}}>Click Me Download</a>
+{%endblock%}

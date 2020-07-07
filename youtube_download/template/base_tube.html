@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title%}{%endblock%}</title>
+    <meta name="viewport" content="width=device,initial-scale=1.0">
+</head>
+<body>
+<div align="center">
+<h1>{%block theme%}{%endblock%}</h1>
+<form method="post">
+    <input type="text" name="jk">
+    <select name="videotype">
+        <option style="font-size:20px;;" disabled>Music</option>
+        <option value="mp3">mp3</option>
+        <option value="aviaudio">avi-only-audio</option>
+        <option style="font-size:20px;" disabled>Video</option>
+        <option value="mp4">mp4</option>
+        <option value="avi">avi</option>
+        <option value="mov">mov</option>
+        <option value="flv">flv</option>
+        <option value="rmvb">rmvb</option>
+        <option value="wmv">wmv</option>
+        <option value="vob">vob</option>
+    </select>
+    <button type="submit">submit</button>
+</form>
+<br>
+{%block tips%}{%endblock%}
+{%block video%}{%endblock%}
+</div>
+</body>
+</html>

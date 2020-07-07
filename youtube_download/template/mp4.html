@@ -1,0 +1,11 @@
+{%extends 'base_tube.html'%}
+{%block title%}Video Downloader{%endblock%}
+{%block theme%}Video Download{%endblock%}
+{%block tips%}<h5>the media file will be destroyed three minute later</h5>{%endblock%}
+{%block video%}
+    <video width="600" height="400" onabort="0" autoplay controls>
+        <source src={{meloc}}>
+    </video>
+    <hr>
+    <a href={{fileloc}} download>Click Me Download</a>
+{%endblock%}
