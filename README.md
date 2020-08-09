@@ -8,4 +8,8 @@
        - command: 
         ```html 
         celery -A app worker -l info
-        
+
+- [qrcode_online_scanner](https://github.com/codefun1983/django_item/tree/master/qrcode_online_scanner)
+  - notice : ssl needs if static file exist
+    - use web server, ex : apache, nginx, django ssl-runserver or socat(port-forward app) etc..
+  - this function is experimental ; in my opinion, this is not useful.
